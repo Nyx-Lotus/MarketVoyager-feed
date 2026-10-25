@@ -12,6 +12,12 @@ https://raw.githubusercontent.com/Nyx-Lotus/MarketVoyager-feed/main/pluginmaster
 
 Save, then search for **MarketVoyager** in `/xlplugins`. Open it with `/mv` or `/marketvoyager`.
 
+## Return to outdoor housing wards (0.17.0)
+
+Starting location now captures world, district, **ward and subdivision**, plus coordinates when buying starts. Outdoor Mist and the other four housing districts no longer fail for lacking an in-zone main aetheryte. Requires the district gateway city attuned. After shopping, Lifestream returns to an outdoor address anchor in the saved ward/division, then vnavmesh walks to the saved coordinates. World, district, ward and division are checked before and throughout the final walk. The saved return point appears in status.
+
+No shared-house shortcut configuration or ownership is required for this outdoor coordinate return. House/apartment interiors remain unsupported; ward access and a valid walking route are required, and travel fees are additional. Build and 119 checks pass; the residential round trip needs in-game testing.
+
 ## Retainer credit compatibility (0.16.2)
 
 The retainer reader now ignores empty/unrelated cached entries before validating owners and supports the installed library's legacy 32-bit owner metadata only when it matches the IPC-scoped full retainer ID. Other owners and malformed populated entries still fail. Inventory errors appear once with more specific diagnostics; successful refresh clears old errors. Build and 108 checks pass; please refresh inventory and retry the quote in-game.
@@ -64,7 +70,7 @@ Version 0.11.0 adds a prominent estimated basket total, verified item/spending p
 
 ## Prototype status
 
-Version 0.16.2 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
+Version 0.17.0 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
 
 Orders can now split purchases across worlds to minimize the combined eligible stack cost. Verified quantity and spending carry across stops. **Replacement price increase (%)** under Purchase safeguards defaults to 10%; live replacements must fit this increase over the stop's quoted unit/subtotal prices, plus all existing safety limits. If none fit, the remaining quantity is replanned against fresh region quotes, excluding visited worlds. Return travel starts only after the entire order is verified. Ambiguous purchase outcomes stop instead of hopping/retrying. World plans estimate buyer tax; final live tax and the order budget are checked before confirming. Teleport fees remain additional. The new multi-world/fallback sequence needs in-game testing.
 
