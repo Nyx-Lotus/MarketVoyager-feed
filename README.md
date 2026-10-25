@@ -14,7 +14,14 @@ Save, then search for **MarketVoyager** in `/xlplugins`. Open it with `/marketvo
 
 ## Prototype status
 
-Version 0.5.0 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
+Version 0.6.0 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
+
+### New price and quantity limits
+
+- Extra items default to zero. Enabling extras also requires setting **Maximum extra items per request**. Needing 6 with a limit of 2 can buy at most 8, never 99.
+- Default unit-price ceiling is **150% of the median recent completed sale price**, separately for NQ/HQ. Requires at least 5 sales within 7 days for that quality. References expire after 10 minutes. Missing, sparse, or stale data blocks automation.
+- The planner minimizes the total whole-stack cost among eligible combinations, including live tax, while respecting your unit cap and request budget. A lower unit price does not justify an oversized stack.
+- Full automatic runs fetch the reference themselves. For standalone/manual shopping, click **Find prices** first. These controls need in-game retesting; they reduce outlier exposure and do not guarantee market prices are fair.
 
 Choose your item, quantity, scope, and purchase limits, then click **Find cheapest, travel and buy (spends gil)**. The plugin finds a fitting reachable world quote, travels there, approaches a board, searches, selects the cheapest fitting live stacks, confirms matching purchase dialogs, and verifies inventory/gil before completing. If no board is loaded, it uses Limsa Lominsa Lower Decks as a fallback market area. This requires attunement and teleport gil. Teleport costs are additional to the purchase budget.
 
