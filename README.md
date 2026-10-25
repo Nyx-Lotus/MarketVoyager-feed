@@ -14,7 +14,7 @@ Save, then search for **MarketVoyager** in `/xlplugins`. Open it with `/marketvo
 
 ## Prototype status
 
-Version 0.4.2 targets Dalamud API 15. It provides Universalis whole-stack price comparisons, guided Lifestream world travel, nearby marketboard approaches, and live stack purchases. Install Lifestream and vnavmesh separately for travel and approaches.
+Version 0.4.3 targets Dalamud API 15. It provides Universalis whole-stack price comparisons, guided Lifestream world travel, nearby marketboard approaches, and live stack purchases. Install Lifestream and vnavmesh separately for travel and approaches.
 
 After travel finishes, click **Approach nearest marketboard**. The plugin walks toward the nearest loaded board and stops within interaction range. Use **Stop marketboard approach** to cancel. If no board is loaded, enter a market area and try again; this action stays in the current territory.
 
@@ -32,4 +32,5 @@ Use **Reset / cancel current operation** to stop and recover immediately. It can
 
 
 Budgets apply to each new shopping request. Prior session spending is displayed separately and does not reduce a new request's budget. A refresh or automatic continuation retains the same request budget and prior spending. Rejected plans now display the effective limits and available exact-quantity stack price.
+
 
