@@ -3,7 +3,7 @@
     "Author": "MarketVoyager contributors",
     "Name": "MarketVoyager",
     "InternalName": "MarketVoyager",
-    "AssemblyVersion": "0.13.0.0",
+    "AssemblyVersion": "0.14.0.0",
     "Description": "Universalis quotes, Lifestream world travel, vnavmesh marketboard approaches, and guided live stack purchases with price limits and inventory/gil verification.",
     "ApplicableVersion": "any",
     "Tags": [
@@ -19,9 +19,9 @@
     "Punchline": "Plan marketboard purchases and travel to your chosen world.",
     "AcceptsFeedback": true,
     "RepoUrl": "https://github.com/Nyx-Lotus/MarketVoyager-feed",
-    "LastUpdate": 1792907604,
-    "DownloadLinkInstall": "https://github.com/Nyx-Lotus/MarketVoyager-feed/releases/download/v0.13.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Nyx-Lotus/MarketVoyager-feed/releases/download/v0.13.0/latest.zip",
-    "DownloadLinkTesting": "https://github.com/Nyx-Lotus/MarketVoyager-feed/releases/download/v0.13.0/latest.zip"
+    "LastUpdate": 1792908322,
+    "DownloadLinkInstall": "https://github.com/Nyx-Lotus/MarketVoyager-feed/releases/download/v0.14.0/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Nyx-Lotus/MarketVoyager-feed/releases/download/v0.14.0/latest.zip",
+    "DownloadLinkTesting": "https://github.com/Nyx-Lotus/MarketVoyager-feed/releases/download/v0.14.0/latest.zip"
   }
 ]

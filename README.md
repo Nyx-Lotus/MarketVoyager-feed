@@ -12,6 +12,12 @@ https://raw.githubusercontent.com/Nyx-Lotus/MarketVoyager-feed/main/pluginmaster
 
 Save, then search for **MarketVoyager** in `/xlplugins`. Open it with `/mv` or `/marketvoyager`.
 
+## Count owned items (0.14.0)
+
+Materials now offers **Count carried inventory toward imported quantities** and **Count retainer stock (Allagan Tools)**. Both default off to avoid subtracting twice from Teamcraft exports that already exclude owned items. Enable them for total requirements. The table shows Imported, Carried, Retainer and To buy quantities; quotes and purchases cover only the remainder. Refresh is automatic before quoting and buying, with a new quote required if the remaining quantities changed. Fully covered imports cost zero and trigger no travel/purchases.
+
+Carried counts use bags/crystals directly. Retainer counts use [Allagan Tools IPC](https://github.com/Critical-Impact/InventoryTools/blob/main/InventoryTools/IPC/IPCService.cs) for this character's cached retainer bags/crystals; enable Allagan Tools and visit each retainer to update its record. Sale listings, equipped gear, collectibles, other characters, shared storage and saddlebag contents do not count. HQ contributes only when Include HQ is on. **Retainer items are counted but must still be withdrawn manually**; the UI shows the outstanding collection quantity. Cached counts may be stale. Build and 73 checks pass; the new native inventory reader and IPC require in-game validation.
+
 ## Quote before buying (0.13.0)
 
 Use **Get quote / Get queue quote**, review the prominent total and Materials row costs, then separately press **Start buying**. Quoting does not travel or spend gil. Changing inputs/settings or waiting ten minutes requires a new quote. Buying captures the starting return location then and refreshes current prices; the quote is an estimate, and the shared budget is the hard purchase limit. Travel fees are additional.
@@ -32,7 +38,7 @@ Version 0.11.0 adds a prominent estimated basket total, verified item/spending p
 
 ## Prototype status
 
-Version 0.13.0 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
+Version 0.14.0 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
 
 Orders can now split purchases across worlds to minimize the combined eligible stack cost. Verified quantity and spending carry across stops. **Replacement price increase (%)** under Purchase safeguards defaults to 10%; live replacements must fit this increase over the stop's quoted unit/subtotal prices, plus all existing safety limits. If none fit, the remaining quantity is replanned against fresh region quotes, excluding visited worlds. Return travel starts only after the entire order is verified. Ambiguous purchase outcomes stop instead of hopping/retrying. World plans estimate buyer tax; final live tax and the order budget are checked before confirming. Teleport fees remain additional. The new multi-world/fallback sequence needs in-game testing.
 
