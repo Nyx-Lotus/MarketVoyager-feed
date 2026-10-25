@@ -14,7 +14,7 @@ Save, then search for **MarketVoyager** in `/xlplugins`. Open it with `/marketvo
 
 ## Prototype status
 
-Version 0.3.0 targets Dalamud API 15. It provides Universalis whole-stack price comparisons, guided Lifestream world travel, nearby marketboard approaches, and confirmed live stack purchases. Install Lifestream and vnavmesh separately for travel and approaches.
+Version 0.3.1 targets Dalamud API 15. It provides Universalis whole-stack price comparisons, guided Lifestream world travel, nearby marketboard approaches, and confirmed live stack purchases. Install Lifestream and vnavmesh separately for travel and approaches.
 
 After travel finishes, click **Approach nearest marketboard**. The plugin walks toward the nearest loaded board and stops within interaction range. Use **Stop marketboard approach** to cancel. If no board is loaded, enter a market area and try again; this action stays in the current territory.
 
@@ -25,4 +25,5 @@ The plugin waits for inventory/gil verification. Unresolved outcomes block more 
 Unattended buying is not implemented. New board opening, live search, and purchase behavior require in-game testing.
 
 Quotes may be stale or incomplete and exclude buyer tax and travel costs. Confirm live prices before purchasing.
+
 
