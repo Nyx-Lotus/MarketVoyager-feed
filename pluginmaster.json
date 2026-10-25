@@ -1,0 +1,27 @@
+[
+  {
+    "Author": "MarketVoyager contributors",
+    "Name": "MarketVoyager",
+    "InternalName": "MarketVoyager",
+    "AssemblyVersion": "0.1.0.0",
+    "Description": "Universalis stack-aware quotes with guided Lifestream world travel. Live purchasing integration is under development.",
+    "ApplicableVersion": "any",
+    "Tags": [
+      "marketboard",
+      "shopping",
+      "universalis"
+    ],
+    "DalamudApiLevel": 15,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "Punchline": "Plan marketboard purchases and travel to your chosen world.",
+    "AcceptsFeedback": true,
+    "RepoUrl": "https://github.com/Nyx-Lotus/MarketVoyager-feed",
+    "LastUpdate": 1792896013,
+    "DownloadLinkInstall": "https://github.com/Nyx-Lotus/MarketVoyager-feed/releases/download/v0.1.0/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Nyx-Lotus/MarketVoyager-feed/releases/download/v0.1.0/latest.zip",
+    "DownloadLinkTesting": "https://github.com/Nyx-Lotus/MarketVoyager-feed/releases/download/v0.1.0/latest.zip"
+  }
+]
