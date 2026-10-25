@@ -12,9 +12,13 @@ https://raw.githubusercontent.com/Nyx-Lotus/MarketVoyager-feed/main/pluginmaster
 
 Save, then search for **MarketVoyager** in `/xlplugins`. Open it with `/mv` or `/marketvoyager`.
 
+## Cost and status dashboard
+
+Version 0.11.0 adds a prominent estimated basket total, verified item/spending progress, current activity, and next purchase quantity, item, world and expected cost. Preview prices includes a combined multi-world basket with estimated market tax; travel fees are additional. Manual controls and diagnostics are collapsed by default. Build and 42 checks pass; in-game visual testing remains.
+
 ## Prototype status
 
-Version 0.10.0 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
+Version 0.11.0 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
 
 Orders can now split purchases across worlds to minimize the combined eligible stack cost. Verified quantity and spending carry across stops. **Replacement price increase (%)** under Purchase safeguards defaults to 10%; live replacements must fit this increase over the stop's quoted unit/subtotal prices, plus all existing safety limits. If none fit, the remaining quantity is replanned against fresh region quotes, excluding visited worlds. Return travel starts only after the entire order is verified. Ambiguous purchase outcomes stop instead of hopping/retrying. World plans estimate buyer tax; final live tax and the order budget are checked before confirming. Teleport fees remain additional. The new multi-world/fallback sequence needs in-game testing.
 
