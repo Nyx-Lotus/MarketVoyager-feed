@@ -14,7 +14,9 @@ Save, then search for **MarketVoyager** in `/xlplugins`. Open it with `/mv` or `
 
 ## Prototype status
 
-Version 0.9.0 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
+Version 0.10.0 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
+
+Orders can now split purchases across worlds to minimize the combined eligible stack cost. Verified quantity and spending carry across stops. **Replacement price increase (%)** under Purchase safeguards defaults to 10%; live replacements must fit this increase over the stop's quoted unit/subtotal prices, plus all existing safety limits. If none fit, the remaining quantity is replanned against fresh region quotes, excluding visited worlds. Return travel starts only after the entire order is verified. Ambiguous purchase outcomes stop instead of hopping/retrying. World plans estimate buyer tax; final live tax and the order budget are checked before confirming. Teleport fees remain additional. The new multi-world/fallback sequence needs in-game testing.
 
 **Starting location (world, zone, coordinates)** is now the default return option. It saves your position when Find cheapest is pressed, returns to that world/zone through Lifestream, then walks to within 1.5 yalms using vnavmesh. Requires an attuned main aetheryte in the starting zone and an available walking route. Numbered instances and arbitrary housing/interior routes are not supported by coordinate return; unsupported starts stop before shopping. Housing shortcut options remain available. The new route needs in-game testing.
 
