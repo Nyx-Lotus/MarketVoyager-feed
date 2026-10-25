@@ -14,7 +14,9 @@ Save, then search for **MarketVoyager** in `/xlplugins`. Open it with `/marketvo
 
 ## Prototype status
 
-Version 0.7.0 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
+Version 0.7.2 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
+
+The character's current region is detected automatically from game data. **Allow travel to other worlds** is on by default and searches that region. Turn it off to keep lookup and purchases on your current world. There is no region, data-center, or world dropdown. The run captures the choice when started.
 
 The redesigned UI uses hot-pink accents on plum-charcoal surfaces with rounded controls. Shop, World quotes, and Live market tabs separate order settings, price comparisons, and manual controls. Run progress and Stop remain visible above the scrolling content. **Preview world prices** is the renamed Find prices action. Purchase and navigation behavior remain the same.
 
