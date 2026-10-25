@@ -10,11 +10,11 @@ Add this URL under Dalamud Settings → Experimental → Custom Plugin Repositor
 https://raw.githubusercontent.com/Nyx-Lotus/MarketVoyager-feed/main/pluginmaster.json
 ```
 
-Save, then search for **MarketVoyager** in `/xlplugins`. Open it with `/marketvoyager`.
+Save, then search for **MarketVoyager** in `/xlplugins`. Open it with `/mv` or `/marketvoyager`.
 
 ## Prototype status
 
-Version 0.8.0 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
+Version 0.8.1 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
 
 **After shopping** offers Stay at marketboard, Starting world (world only), Private house, Free company estate, Shared estate, and Apartment. Returns run only after purchases are verified. Starting world does not restore your exact starting position. Housing options use your home-world Lifestream shortcuts; configure those destinations in Lifestream. Return fees are additional. A return failure reports that purchases already succeeded. Return routes need an in-game retest.
 
@@ -49,5 +49,6 @@ Use **Reset / cancel current operation** to stop and recover immediately. It can
 
 
 Budgets apply to each new shopping request. Prior session spending is displayed separately and does not reduce a new request's budget. A refresh or automatic continuation retains the same request budget and prior spending. Rejected plans now display the effective limits and available exact-quantity stack price.
+
 
 
