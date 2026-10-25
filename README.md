@@ -14,7 +14,9 @@ Save, then search for **MarketVoyager** in `/xlplugins`. Open it with `/marketvo
 
 ## Prototype status
 
-Version 0.6.0 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
+Version 0.7.0 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
+
+The redesigned UI uses hot-pink accents on plum-charcoal surfaces with rounded controls. Shop, World quotes, and Live market tabs separate order settings, price comparisons, and manual controls. Run progress and Stop remain visible above the scrolling content. **Preview world prices** is the renamed Find prices action. Purchase and navigation behavior remain the same.
 
 ### New price and quantity limits
 
