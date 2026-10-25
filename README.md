@@ -14,7 +14,9 @@ Save, then search for **MarketVoyager** in `/xlplugins`. Open it with `/marketvo
 
 ## Prototype status
 
-Version 0.7.2 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
+Version 0.8.0 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
+
+**After shopping** offers Stay at marketboard, Starting world (world only), Private house, Free company estate, Shared estate, and Apartment. Returns run only after purchases are verified. Starting world does not restore your exact starting position. Housing options use your home-world Lifestream shortcuts; configure those destinations in Lifestream. Return fees are additional. A return failure reports that purchases already succeeded. Return routes need an in-game retest.
 
 The character's current region is detected automatically from game data. **Allow travel to other worlds** is on by default and searches that region. Turn it off to keep lookup and purchases on your current world. There is no region, data-center, or world dropdown. The run captures the choice when started.
 
