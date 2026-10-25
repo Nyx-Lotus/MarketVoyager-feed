@@ -14,7 +14,11 @@ Save, then search for **MarketVoyager** in `/xlplugins`. Open it with `/marketvo
 
 ## Prototype status
 
-Version 0.4.3 targets Dalamud API 15. It provides Universalis whole-stack price comparisons, guided Lifestream world travel, nearby marketboard approaches, and live stack purchases. Install Lifestream and vnavmesh separately for travel and approaches.
+Version 0.5.0 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
+
+Choose your item, quantity, scope, and purchase limits, then click **Find cheapest, travel and buy (spends gil)**. The plugin finds a fitting reachable world quote, travels there, approaches a board, searches, selects the cheapest fitting live stacks, confirms matching purchase dialogs, and verifies inventory/gil before completing. If no board is loaded, it uses Limsa Lominsa Lower Decks as a fallback market area. This requires attunement and teleport gil. Teleport costs are additional to the purchase budget.
+
+Use **Stop entire run** to cancel further steps. Already sent purchases remain under verification. Runs handle one item on one chosen world; they stop if live stock/prices no longer fit instead of exceeding limits or automatically trying another world. The new complete sequence requires in-game testing.
 
 After travel finishes, click **Approach nearest marketboard**. The plugin walks toward the nearest loaded board and stops within interaction range. Use **Stop marketboard approach** to cancel. If no board is loaded, enter a market area and try again; this action stays in the current territory.
 
