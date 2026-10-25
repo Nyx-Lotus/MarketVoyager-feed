@@ -12,6 +12,10 @@ https://raw.githubusercontent.com/Nyx-Lotus/MarketVoyager-feed/main/pluginmaster
 
 Save, then search for **MarketVoyager** in `/xlplugins`. Open it with `/mv` or `/marketvoyager`.
 
+## Quote action handling (0.16.1)
+
+Quote/buy controls now use a dedicated action bar and dispatch on the game update thread, with immediate queued feedback, explicit blockers/errors and click logging. Inventory-refresh failures no longer leave a silent return. `/mv quote` is an alternate command to request the same quote. Purchases still require a current matching quote and a separate Start buying action. Build and 103 existing checks pass; the reported click regression needs in-game validation.
+
 ## Compact wider layout (0.16.0)
 
 Wider, shorter default window (1180x740, scaled and capped to the display), side-by-side quote/buy actions, tighter spacing, and batch setup in a separate left pane. Drag the divider to change pane widths. The item table has independent scrolling, fixed headers, resizable columns, wrapped item/status text and properly sized Remove controls. Small windows can scroll horizontally. The layout resets once when the plugin loads, then remains resizable. Release build passes; in-game visual validation remains.
@@ -56,7 +60,7 @@ Version 0.11.0 adds a prominent estimated basket total, verified item/spending p
 
 ## Prototype status
 
-Version 0.16.0 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
+Version 0.16.1 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
 
 Orders can now split purchases across worlds to minimize the combined eligible stack cost. Verified quantity and spending carry across stops. **Replacement price increase (%)** under Purchase safeguards defaults to 10%; live replacements must fit this increase over the stop's quoted unit/subtotal prices, plus all existing safety limits. If none fit, the remaining quantity is replanned against fresh region quotes, excluding visited worlds. Return travel starts only after the entire order is verified. Ambiguous purchase outcomes stop instead of hopping/retrying. World plans estimate buyer tax; final live tax and the order budget are checked before confirming. Teleport fees remain additional. The new multi-world/fallback sequence needs in-game testing.
 
