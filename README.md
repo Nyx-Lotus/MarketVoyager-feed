@@ -12,6 +12,12 @@ https://raw.githubusercontent.com/Nyx-Lotus/MarketVoyager-feed/main/pluginmaster
 
 Save, then search for **MarketVoyager** in `/xlplugins`. Open it with `/mv` or `/marketvoyager`.
 
+## Manual batches and average prices (0.15.0)
+
+The **Batch** tab now supports searching/adding items without Teamcraft, editing each row's Needed quantity, Remove, and Clear batch. Adding a duplicate increases its quantity. Teamcraft import is optional and collapsed; imported lists can also be edited. Any change requires a fresh quote before buying. All existing quantity/budget and inventory-credit safeguards apply.
+
+Each quoted total now includes a weighted **average gil per item** underneath, including tax. The denominator is the actual planned/purchased quantity including allowed extras, excluding units already owned. Hover for details. Completed purchases are included when an item replans. Build and 94 checks pass; editor layout and in-game flow still need testing.
+
 ## Bulk import fix (0.14.1)
 
 Fixes the `1193x Fire Crystal` import failure by raising the supported quantity to **9,999 per material** throughout importing, queue validation, price planning and purchase setup. Keeps whole-stack, budget and extra-quantity safeguards. Import errors now show their specific reason in the top status panel and are recorded in the plugin log. Build and 84 checks pass, including the reported input; live bulk purchasing needs in-game testing.
@@ -42,7 +48,7 @@ Version 0.11.0 adds a prominent estimated basket total, verified item/spending p
 
 ## Prototype status
 
-Version 0.14.1 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
+Version 0.15.0 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
 
 Orders can now split purchases across worlds to minimize the combined eligible stack cost. Verified quantity and spending carry across stops. **Replacement price increase (%)** under Purchase safeguards defaults to 10%; live replacements must fit this increase over the stop's quoted unit/subtotal prices, plus all existing safety limits. If none fit, the remaining quantity is replanned against fresh region quotes, excluding visited worlds. Return travel starts only after the entire order is verified. Ambiguous purchase outcomes stop instead of hopping/retrying. World plans estimate buyer tax; final live tax and the order budget are checked before confirming. Teleport fees remain additional. The new multi-world/fallback sequence needs in-game testing.
 
