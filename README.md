@@ -12,6 +12,12 @@ https://raw.githubusercontent.com/Nyx-Lotus/MarketVoyager-feed/main/pluginmaster
 
 Save, then search for **MarketVoyager** in `/xlplugins`. Open it with `/mv` or `/marketvoyager`.
 
+## Quote before buying (0.13.0)
+
+Use **Get quote / Get queue quote**, review the prominent total and Materials row costs, then separately press **Start buying**. Quoting does not travel or spend gil. Changing inputs/settings or waiting ten minutes requires a new quote. Buying captures the starting return location then and refreshes current prices; the quote is an estimate, and the shared budget is the hard purchase limit. Travel fees are additional.
+
+Status now explicitly distinguishes not started, working, quote ready, stopped and needs attention. It shows an animated activity indicator, elapsed time, current item/server wait, queue prices/plans progress, a warning after 15 seconds waiting for a server response, and named-item timeout errors after the 30-second request limit. Errors remain visible rather than reverting to Ready. Build and 61 existing checks pass; in-game UI and workflow testing remain.
+
 ## Teamcraft materials (0.12.0)
 
 Copy the **materials panel as text** in Teamcraft, paste it into MarketVoyager's **Materials** tab, click **Import / replace queue**, review the rows, then **Start imported queue**. Uses Teamcraft's text format (`6x Zinc Ore` with optional section headings), verified against [the official panel exporter](https://github.com/ffxiv-teamcraft/ffxiv-teamcraft/blob/staging/apps/client/src/app/modules/list/list-details-panel/list-details-panel.component.ts). Export just the materials you intend to purchase: whole-list exports may contain both intermediates and ingredients. Names must match your game language. URLs/JSON/encoded strings are not supported.
@@ -26,7 +32,7 @@ Version 0.11.0 adds a prominent estimated basket total, verified item/spending p
 
 ## Prototype status
 
-Version 0.12.0 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
+Version 0.13.0 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
 
 Orders can now split purchases across worlds to minimize the combined eligible stack cost. Verified quantity and spending carry across stops. **Replacement price increase (%)** under Purchase safeguards defaults to 10%; live replacements must fit this increase over the stop's quoted unit/subtotal prices, plus all existing safety limits. If none fit, the remaining quantity is replanned against fresh region quotes, excluding visited worlds. Return travel starts only after the entire order is verified. Ambiguous purchase outcomes stop instead of hopping/retrying. World plans estimate buyer tax; final live tax and the order budget are checked before confirming. Teleport fees remain additional. The new multi-world/fallback sequence needs in-game testing.
 
