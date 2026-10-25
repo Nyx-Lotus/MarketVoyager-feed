@@ -14,7 +14,9 @@ Save, then search for **MarketVoyager** in `/xlplugins`. Open it with `/mv` or `
 
 ## Prototype status
 
-Version 0.8.1 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
+Version 0.9.0 targets Dalamud API 15. Install Lifestream and vnavmesh separately for travel and approaches.
+
+**Starting location (world, zone, coordinates)** is now the default return option. It saves your position when Find cheapest is pressed, returns to that world/zone through Lifestream, then walks to within 1.5 yalms using vnavmesh. Requires an attuned main aetheryte in the starting zone and an available walking route. Numbered instances and arbitrary housing/interior routes are not supported by coordinate return; unsupported starts stop before shopping. Housing shortcut options remain available. The new route needs in-game testing.
 
 **After shopping** offers Stay at marketboard, Starting world (world only), Private house, Free company estate, Shared estate, and Apartment. Returns run only after purchases are verified. Starting world does not restore your exact starting position. Housing options use your home-world Lifestream shortcuts; configure those destinations in Lifestream. Return fees are additional. A return failure reports that purchases already succeeded. Return routes need an in-game retest.
 
