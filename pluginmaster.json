@@ -3,7 +3,7 @@
     "Author": "MarketVoyager contributors",
     "Name": "MarketVoyager",
     "InternalName": "MarketVoyager",
-    "AssemblyVersion": "0.30.1.0",
+    "AssemblyVersion": "0.30.2.0",
     "Description": "Verified starter-city gil vendors, Universalis marketboard quotes, Lifestream travel, vnavmesh approaches, explicit alternative approval and inventory/gil purchase verification.",
     "ApplicableVersion": "any",
     "Tags": [
@@ -19,9 +19,9 @@
     "Punchline": "Compare vendor and marketboard prices, travel and fulfill work orders.",
     "AcceptsFeedback": true,
     "RepoUrl": "https://github.com/Nyx-Lotus/MarketVoyager-feed",
-    "LastUpdate": 1792982197,
-    "DownloadLinkInstall": "https://github.com/Nyx-Lotus/MarketVoyager-feed/releases/download/v0.30.1/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/Nyx-Lotus/MarketVoyager-feed/releases/download/v0.30.1/latest.zip",
-    "DownloadLinkTesting": "https://github.com/Nyx-Lotus/MarketVoyager-feed/releases/download/v0.30.1/latest.zip"
+    "LastUpdate": 1792986323,
+    "DownloadLinkInstall": "https://github.com/Nyx-Lotus/MarketVoyager-feed/releases/download/v0.30.2/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/Nyx-Lotus/MarketVoyager-feed/releases/download/v0.30.2/latest.zip",
+    "DownloadLinkTesting": "https://github.com/Nyx-Lotus/MarketVoyager-feed/releases/download/v0.30.2/latest.zip"
   }
 ]
